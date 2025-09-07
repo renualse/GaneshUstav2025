@@ -1,0 +1,626 @@
+.ganesha {
+  display: inline-block;
+  vertical-align: BOTTOM;
+  margin-right: -200px; /* 👈 yaha value badhao space ke liye */
+  width: 250px;       /* optional: size fix karne ke liye */
+  height: auto;
+}
+
+.event-box {
+  display: inline-block;
+  vertical-align: bottom;
+  border: 1px solid #000;
+  padding: 8px;
+  width: 180px;
+  background: #fff;
+  font-size: 0.75rem;
+  border-radius: 20px 0 20px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  border-left: 4px solid orange;
+}
+
+
+
+.container {
+  display: flex;          /* side-by-side layout */
+  gap: 30px;              /* dono box ke beech space */
+  justify-content: center; /* center me laane ke liye */
+  margin-top: 20px;
+}
+
+.event-box, .highlights-box {
+  border: 1px solid #000;
+  padding: 20px;
+  width: 240px;
+  background:palevioletred;
+  font-size: 0.8rem;
+  border-radius: 25px 0 25px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.event-box h3, .highlights-box h3 {
+  color: orange;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.highlights-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 5px 0;
+}
+
+.highlights-box li {
+  margin: 5px 0;
+  font-size: 0.8rem;
+  color: black;
+}
+
+
+
+
+/*.glass-box {
+  width: 240px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25 px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #222;
+}*/
+
+.highlights-box{
+
+  width: 240px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  color: #333;
+  font-size: 0.9rem;
+};
+
+
+.event-box, .highlights-box {
+  width: 250px;      /* 👈 dono ka width same */
+  min-height: 250px; /* 👈 dono ka height same */
+  background:palevioletred;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.box-container {
+  display: flex;       /* dono boxes ek line me aayenge */
+  gap: 20px;           /* dono ke beech ka space */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.event-box, .highlights-box {
+  width: 220px;        /* same width */
+  min-height: 250px;   /* same height */
+  background: rgb(12, 144, 197);
+  border: 1px solid #000;
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 20px 0 20px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+
+
+.wish-section {
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff8e7;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.wish-section h3 {
+  color: darkorange;
+  margin-bottom: 10px;
+}
+
+.wish-section input, 
+.wish-section textarea {
+  width: 90%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.wish-section button {
+  background: orange;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.wish-section button:hover {
+  background: darkorange;
+}
+
+
+.music-box {
+  text-align: center;
+  background: #fff8e7;
+  padding: 15px;
+  border-radius: 20px;
+  width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.music-box h3 {
+  color: darkorange;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+
+.poster-section {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 30px;
+  margin: 30px auto;
+  width: 80%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.poster-content h2 {
+  color: darkorange;
+  margin: 15px 0;
+  font-size: 1.8rem;
+  font-family: 'Georgia', serif;
+}
+
+
+.ganesh-poster {
+  width: 150px;
+  margin-bottom: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Floating Ganesh ji Image */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+
+.poster-section {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  text-align: center;
+  padding: 20px 10px;      /* 👈 kam padding */
+  border-radius: 20px;     
+  margin: 20px auto;
+  width: 60%;              /* 👈 width kam */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.poster-content h2 {
+  color: darkorange;
+  margin: 10px 0;
+  font-size: 1.2rem;       /* 👈 text chhota */
+}
+
+.ganesh-poster {
+  width: 100px;            /* 👈 photo chhoti */
+  margin-bottom: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.quote {
+  font-size: 0.85rem;      /* 👈 text size chhota */
+  line-height: 1.4;
+  color: #444;
+}
+
+.poster-section {
+  background: #fff;
+  text-align: center;
+  padding: 25px;
+  margin: 20px auto;
+  width: 70%;
+  border-radius: 20px;
+  border: 6px double orange;  /* fancy border */
+  box-shadow: 0 8px 20px rgba(255,140,0,0.3);
+}
+
+
+.poster-section {
+  background: radial-gradient(circle at top, #fff3e0, #ffcc80);
+  text-align: center;
+  padding: 20px;
+  border-radius: 50%;    /* circle shape */
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+
+
+
+
+.utsav-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;       /* 👈 dono boxes ke beech me space */
+  margin: 20px;
+}
+
+.story-box, .extra-box {
+  flex: 1;                   /* dono box equal width */
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.story-box h2, .extra-box h2 {
+  color: darkorange;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: "Pacifico", cursive; /* thoda decorative heading */
+}
+
+
+
+
+.utsav-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;         /* dono ke beech gap */
+  margin: 20px auto;
+}
+
+.story-box, .extra-box {
+  flex: 1;                          /* equal width */
+  max-width: 250px;                 /* 👈 size chhoti */
+  padding: 15px;
+  border-radius: 8px;               /* 👈 square type (kam curve) */
+  background: #fff8f0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  font-size: 0.8rem;                /* 👈 chhota font */
+  line-height: 1.4;
+  font-family: "Georgia", serif;    /* 👈 new font style */
+  color: #333;
+}
+
+.story-box h2, .extra-box h2 {
+  color: darkorange;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", sans-serif; /* 👈 heading ke liye alag font */
+}
+
+
+
+
+/* Grid wrapper */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* 2 boxes per row */
+  gap: 20px;   /* 👈 boxes ke beech space */
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Each small card */
+.event-card {
+  background: #fff8f0;
+  border-radius: 8px;   /* square-ish */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 15px;
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.event-card h3 {
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: darkorange;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+
+
+/* Outer background container */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  
+  /* Transparent background effect */
+  background: rgba(255, 255, 255, 0.7);  
+  backdrop-filter: blur(6px);            /* 👈 glassy effect */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+/* Heading for container */
+.event-grid::before {
+  content: "✨ Special Highlights ✨";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, orange, red);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Each small box inside */
+.event-card {
+  background: #fff;  /* solid small box */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 15px;
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 0.85rem;
+  color: #333;
+  transition: transform 0.3s;
+}
+
+.event-card h3 {
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: darkorange;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.event-card.music-night {
+  background: linear-gradient(135deg, #ffe0cc, #ffb380);  /* festive gradient */
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #222;
+  max-width: 550px;
+  margin: 25px auto;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  
+}
+.event-card.music-night p{
+    font-size: 0.9rem;
+  margin: 6px 0;
+
+}
+
+
+
+/* Dolak Pathak Rally Box */
+.event-card.dolak {
+  max-width: 550px;
+  margin: 25px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  font-family: "Trebuchet MS", sans-serif;
+  color: #222;
+}
+
+.event-card.dolak h2 {
+  color: darkred;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.event-card.dolak p {
+  font-size: 0.9rem;
+  margin: 6px 0;
+}
+
+
+
+
+
+
+/* Flex wrapper to keep both side by side */
+.utsav-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;   /* beech ka space */
+  margin: 20px auto;
+  flex-wrap: wrap; /* mobile par neeche aa jaye */
+}
+
+/* Circle Box Style */
+.circle-box {
+  background:darkorange;
+  backdrop-filter: blur(6px);
+  border-radius: 50%;    /* 👈 circle banayega */
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  text-align: center;
+  color: #333;
+  font-family: "Georgia", serif;
+  display: inline-block;
+}
+
+/* Text ke hisaab se size badhe */
+.circle-box h2 {
+  color: purple;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+.contact-us {
+  max-width: 700px; /* chhota overall container */
+  margin: 30px auto;
+  padding: 15px;
+  background: rgba(255, 248, 240, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  font-family: "Poppins", sans-serif; /* stylish font */
+  font-size: 0.75rem; /* chhota font */
+  color: #222;
+}
+
+.contact-us h2 {
+  color: darkorange;
+  font-family: "Pacifico", cursive; /* thoda decorative heading */
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 15px;   /* thoda gap */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+  min-width: 220px; /* chhota box */
+  background: rgba(255,255,255,0.8);
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+  margin: 4px 0;
+  font-size: 0.7rem; /* bahut chhota font */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem; /* chhota font */
+}
+
+.contact-form button {
+  padding: 8px 14px;
+  border-radius: 18px;
+  border: none;
+  background: linear-gradient(90deg,#ffb347,#ff8008);
+  color: #081023;
+  font-weight: bold;
+  font-size: 0.75rem; /* chhota button text */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+}
+
+
+.story-container h2{
+  color: darkorange;
+  font-family: "Pacifico", cursive; /* thoda decorative heading */
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+
+
+.story-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+  background:#ffb347;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-family: "Poppins", sans-serif; /* stylish font */
+  font-size: 0.75rem; /* chhota font */
+  color: #333;
+  line-height: 1.4;
+}
+
+.story-title {
+  display: inline-block;
+  background: linear-gradient(90deg,#ffe0cc,#ffb380);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.85rem; /* slightly bigger than body text */
+  color: #222;
+  text-align: center;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+
+.pray{
+    font-family: "Pacifico", cursive;
+}
+
+.poster-section{
+  color:black;
+}
+
+
+.story-container{
+  color:black;
+  line-height: none;
+  background:none;
+}
+
+
